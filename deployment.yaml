@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: hello
-        image: pjbear/hello:latest
+        image: dudtjs0920/hello:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 5000
