@@ -1,10 +1,10 @@
 pipeline {
     agent any
     environment {
-        PROJECT_ID = 'oss2022fall'
+        PROJECT_ID = 'aerimpratice'
         CLUSTER_NAME = 'kube'
         LOCATION = 'asia-northeast3-a'
-        CREDENTIALS_ID = 'gke'
+        CREDENTIALS_ID = '3061904f-fd57-4b56-ba32-c14d9d5f5377'
     }
     stages {
         stage("Checkout code") {
@@ -15,7 +15,7 @@ pipeline {
         stage("Build image") {
             steps {
                 script {
-                    myapp = docker.build("pjbear/hello:${env.BUILD_ID}")
+                    myapp = docker.build("choiaerim/hello:${env.BUILD_ID}")
                 }
             }
         }
