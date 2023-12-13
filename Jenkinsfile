@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment {
         PROJECT_ID = 'open-398612'
-        CLUSTER_NAME = 'gke_open-398612_asia-northeast3-a_k8s'
+        CLUSTER_NAME = 'k8s'
         LOCATION = 'asia-northeast3-a'
         CREDENTIALS_ID = 'eaf3d00e-73d0-43dd-a9a1-6da8057996c9'
     }
